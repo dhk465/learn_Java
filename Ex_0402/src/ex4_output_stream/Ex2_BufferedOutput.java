@@ -24,11 +24,14 @@ public class Ex2_BufferedOutput {
 			bos.write(str.getBytes());
 			bos.write(str2.getBytes());
 			
+	//		bos.flush(); // close()가 호출되지 않아도 물리적 값을 기록한다.
+			
 		} catch (Exception e) {
 			
 		} finally {
 			// BufferedStream은 바이트를 모아놓고 처리를 하여
-			// 닫는 작업을 할때 flush가 되어 write함수가 끝난다.
+			// 닫는 작업을 할때 flush()없어도
+			// close()에 의해 자동으로 write()함수가 끝난다.
 
 			if (bos != null) {
 				bos.close();
