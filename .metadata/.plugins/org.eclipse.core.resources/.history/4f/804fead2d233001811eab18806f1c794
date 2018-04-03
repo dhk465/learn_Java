@@ -1,0 +1,15 @@
+package work;
+
+public class GAMain {
+	public static void main(String[] args) {
+		
+		GuessAdds ga = new GuessAdds();
+		Thread th = new Thread(ga);
+		
+		th.start();
+		
+		
+		
+		
+	}
+}

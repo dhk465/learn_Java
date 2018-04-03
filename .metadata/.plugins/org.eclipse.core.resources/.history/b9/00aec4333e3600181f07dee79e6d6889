@@ -1,0 +1,108 @@
+package ex1_arraylist;
+
+import java.util.Scanner;
+
+public class Person {
+	
+	private String name;
+	private int age;
+	private String tel;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getTel() {
+		return tel;
+	}
+	public void setTel(String tel) {
+		this.tel = tel;
+	}
+	
+	public void removePerson() {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		Person p = new Person();
+		
+		System.out.println("---정보삭제---");
+		System.out.print("전화번호 : ");
+		String phone = sc.next();
+		
+		for (int i = 0; i < .length; i++) {
+			
+		}	
+		
+	}//for
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

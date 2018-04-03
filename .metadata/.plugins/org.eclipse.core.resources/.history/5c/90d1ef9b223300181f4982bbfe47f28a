@@ -1,0 +1,17 @@
+package ex5_daemon;
+
+public class DaemonMain {
+	public static void main(String[] args) {
+		
+		DaemonTest dt = new DaemonTest();
+		Thread th = new Thread(dt);
+		
+		th.start();
+		
+		for (int i = 0; i < 20; i++) {
+			Thread.sleep(1000);
+			System.out.println("°ÔÀÓ Áß..." + i);
+		}
+		
+	}
+}

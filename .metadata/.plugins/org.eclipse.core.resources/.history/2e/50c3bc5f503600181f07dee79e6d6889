@@ -1,0 +1,18 @@
+package ex3_input_stream;
+
+import java.io.File;
+
+import ex2_io.FilePath;
+
+public class Ex3_FileInput {
+	public static void main(String[] args) {
+		
+		String path = FilePath.PATH + "/palindrome.txt";
+		File f = new File(path);
+		
+		byte[] b = new byte[(int) f.length()];
+		
+		String palindrome = new String(b);
+		
+	} // main
+}

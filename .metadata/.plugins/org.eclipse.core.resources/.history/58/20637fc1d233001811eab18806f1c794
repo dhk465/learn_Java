@@ -1,0 +1,11 @@
+package work;
+
+public class GAMain {
+	public static void main(String[] args) {
+		
+		GuessAdds ga = new GuessAdds();
+		
+		
+		
+	}
+}

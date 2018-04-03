@@ -1,0 +1,24 @@
+package ex2_io;
+
+import java.io.File;
+
+public class Ex1_File {
+	public static void main(String[] args) {
+		
+		// IO (Input, Output)
+		// IO는 입출력 스트림을 의미
+		// 스트림이란, 테이터를 입출력하기 위한 방법
+		// JVM에서 파일을 읽어들인다던지, 콘솔에서 키보드값을 얻어오는 등의 작업이 가능
+		// JVM에서 콘솔로 값을 보낼땐 Output, 반대로 콘솔의 값을 JV<에서 벋을땐 Input
+		
+		// File클래스 생성경로
+		String path = "c:/test/test.txt";
+		
+		File test = new File(path);
+		
+		if (test.isFile()) { // 생성된 파일 클래스 객체가 파일(폴더x)인 경우
+			System.out.println("용량: " + test.length());
+		}
+		
+	} // main
+}

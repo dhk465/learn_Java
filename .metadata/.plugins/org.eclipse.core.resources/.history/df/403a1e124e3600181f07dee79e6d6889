@@ -1,0 +1,24 @@
+package ex3_input_stream;
+
+import java.io.File;
+
+import ex2_io.FilePath;
+
+public class Ex2_FileInput {
+	public static void main(String[] args) {
+		
+		// 한글을 읽어오자
+		
+		String path = FilePath.PATH + "/test.txt";
+		File f = new File(path);
+		
+		byte[] b = new byte[100];
+		
+		if (f.exists()) {
+			
+			
+			
+		}
+		
+	}
+}

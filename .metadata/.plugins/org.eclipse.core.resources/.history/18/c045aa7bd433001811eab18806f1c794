@@ -1,0 +1,18 @@
+package work;
+
+import java.util.Scanner;
+
+public class GAMain {
+	public static void main(String[] args) {
+		
+		GuessAdds ga = new GuessAdds();
+		Thread th = new Thread(ga);
+		Scanner sc = new Scanner(System.in);
+		
+		th.start();
+		
+		System.out.print("Solve the following addition:\n" + ga.getRandom1() + " + " + ga.getRandom2() + " = ");
+		
+		
+	}
+}

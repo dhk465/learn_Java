@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Ex_0402/src/ex3_input_stream/Ex1_FileInput.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ex3_input_stream.Ex1_FileInput"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Ex_0402"/>
+</launchConfiguration>

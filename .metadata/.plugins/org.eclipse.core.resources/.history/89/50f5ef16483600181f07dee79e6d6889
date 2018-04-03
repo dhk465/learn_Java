@@ -1,0 +1,10 @@
+package ex2_io;
+
+public class Ex4_File {
+	public static void main(String[] args) {
+		String path = FilePath.PATH + "/IO_Test/hong";
+		
+		File f = new File(path);
+		
+	}
+}

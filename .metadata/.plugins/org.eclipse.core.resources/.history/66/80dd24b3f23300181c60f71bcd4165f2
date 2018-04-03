@@ -1,0 +1,11 @@
+package ex4_arraylist;
+
+import java.util.ArrayList;
+
+public class BookShop {
+	public static void main(String[] args) {
+		
+		List<Book> list = new ArrayList<>();
+		
+	}
+}

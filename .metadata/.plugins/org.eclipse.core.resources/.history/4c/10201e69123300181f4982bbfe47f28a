@@ -1,0 +1,9 @@
+package ex1_thread_sleep;
+
+public class Ex_ThreadSleep extends Thread{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+}

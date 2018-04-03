@@ -1,0 +1,7 @@
+String[] arr = {"hope", "view", "apple"};
+----------------------------------
+문제 : pealp
+정답 : ealpp
+ealpp오답....
+정답 : apple
+apple 정답

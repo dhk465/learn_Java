@@ -1,0 +1,22 @@
+package ex4_thread;
+
+public class ThreadCount implements Runnable {
+	
+	private int num;
+	
+	public void sendParameter(int num) {
+		this.num = num;
+	}
+	
+	@Override
+	public void run() {
+			
+		for (int i = num; i > -1; i--) {
+			System.out.println(i);
+		}
+		
+		System.out.println("Á¾·á");
+		
+	}
+	
+}

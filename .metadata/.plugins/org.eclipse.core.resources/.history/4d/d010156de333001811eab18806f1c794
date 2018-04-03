@@ -1,0 +1,12 @@
+package ex2_map;
+
+import java.util.HashMap;
+
+public class Ex2_Map {
+	public static void main(String[] args) {
+		
+		HashMap<String, Integer> user = new HashMap<>();
+		user.put("kim", 1111);
+		
+	}
+}

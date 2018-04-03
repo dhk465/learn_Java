@@ -1,0 +1,21 @@
+
+package ex3_input_stream;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import ex2_io.FilePath;
+
+public class Ex1_FileInput {
+	public static void main(String[] args) {
+		
+		String path = FilePath.PATH + "/test.txt";
+		
+		File f = new File(path);
+		
+		if (f.exists()) {
+			FileInputStream fis = new FileInputStream(); 
+		}
+		
+	}
+}

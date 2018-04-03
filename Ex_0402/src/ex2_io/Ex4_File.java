@@ -1,0 +1,20 @@
+package ex2_io;
+
+import java.io.File;
+
+public class Ex4_File {
+	public static void main(String[] args) {
+		String path = FilePath.PATH + "/IO_Test";
+		
+		File f = new File(path);
+		
+		// File클래스 경로의 존재 여부
+		if (!f.exists()) {
+			// 경로가 존재하지 않는다면 폴더 생성
+			f.mkdirs();
+			System.out.println(path + " 경로로 폴더를 생성함");
+		} else {
+			System.out.println("이미 폴더가 존재합니다.");
+		}
+	}
+}

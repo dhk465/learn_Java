@@ -1,0 +1,48 @@
+package ex3_input_stream;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+import ex2_io.FilePath;
+
+public class Ex3_FileInput {
+	public static void main(String[] args) {
+		
+		String path = FilePath.PATH + "/palindrome.txt";
+		File f = new File(path);
+		
+		byte[] b = new byte[(int) f.length()];
+		
+		String palindrome = "";
+		String emordnilap = "";
+		
+		if (f.exists()) {
+			FileInputStream fis;
+			try {
+				
+				fis = new FileInputStream(f);
+				
+				fis.read(b);
+				
+				palindrome = new String(b);
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+			
+		for (int i = palindrome.length() - 1; i >= 0 ; i--) {
+			emordnilap += palindrome.trim().charAt(i);
+		}
+		
+		if (palindrome.equals(emordnilap)) {
+			System.out.println(emordnilap + "(과)와 " + palindrome + "(는)은 회문수입니다.");
+		} else {
+			System.out.println(emordnilap + "(과)와 " + palindrome + "(는)은 회문수가 아닙니다.");
+		}
+		
+		
+		
+	} // main
+}

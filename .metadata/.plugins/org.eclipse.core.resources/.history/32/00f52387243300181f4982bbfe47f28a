@@ -1,0 +1,11 @@
+package ex6_synchronized;
+
+public class SyncMain {
+	public static void main(String[] args) {
+		
+		public void withdraw(int howMuch) {
+			
+		}
+		
+	}
+}

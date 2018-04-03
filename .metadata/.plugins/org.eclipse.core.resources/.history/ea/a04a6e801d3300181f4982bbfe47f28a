@@ -1,0 +1,22 @@
+package ex4_thread;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class ThreadMain {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		ThreadCount tc = new ThreadCount();	
+		Thread th = new Thread(tc);
+		
+		int num;
+		
+		System.out.print("정수 입력: ");
+		num = sc.nextInt();
+		tc.sendParameter(num);
+		
+		th.start();
+		
+	}
+}

@@ -1,0 +1,6 @@
+package ex6_synchronized;
+
+public class SyncThread {
+	
+	private int money = 10000;
+}

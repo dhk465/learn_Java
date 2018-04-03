@@ -1,0 +1,12 @@
+package ex3_input_stream;
+
+import ex2_io.FilePath;
+
+public class Ex3_FileInput {
+	public static void main(String[] args) {
+		
+		String path = FilePath.PATH + "/palindrome.txt";
+		File f = new File();
+		
+	} // main
+}

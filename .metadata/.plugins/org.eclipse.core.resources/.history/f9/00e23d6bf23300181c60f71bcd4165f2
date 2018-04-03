@@ -1,0 +1,8 @@
+package ex4_arraylist;
+
+public class Book {
+	
+	String title;
+	int price;
+	
+}

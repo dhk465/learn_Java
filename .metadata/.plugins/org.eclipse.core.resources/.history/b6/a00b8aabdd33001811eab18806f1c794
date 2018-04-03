@@ -1,0 +1,11 @@
+package ex2_map;
+
+public class Ex1_Map {
+	public static void main(String[] args) {
+		
+		// HashMap<key, value> name = new HashMap<>();
+		
+		HashMap<Integer, Boolean> map = new HashMap<>();
+		
+	}
+}

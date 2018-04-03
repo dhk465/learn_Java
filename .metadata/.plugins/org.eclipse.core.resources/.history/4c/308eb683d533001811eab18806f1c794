@@ -1,0 +1,36 @@
+package work;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class GAMain {
+	public static void main(String[] args) {
+		
+		int answer;
+		
+		GuessAdds ga = new GuessAdds();
+		Thread th = new Thread(ga);
+		Scanner sc = new Scanner(System.in);
+		
+		th.start();
+		
+loop:	while (ga.getCount() <= 5) {
+			
+			System.out.print("Solve the following addition:\n" + ga.getRandom1() + " + " + ga.getRandom2() + " = ");
+			
+			try {
+				answer = sc.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("정수가 아닙니다.");
+				continue loop;
+			} // try-catch
+			
+			
+			
+		} // while
+		
+		
+		
+		
+	}
+}

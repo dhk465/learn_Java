@@ -1,0 +1,32 @@
+package work;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class GAMain {
+	public static void main(String[] args) {
+		
+		Addition ga = new Addition();
+		Thread th = new Thread(ga);
+		
+		th.start();
+		
+		while (ga.getCount() < 5) {
+			
+			try {
+				
+				Thread.sleep(1000);
+				ga.addSecond(1);
+				
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} // try-catch
+			
+		} // while
+		
+		
+		
+		System.out.println(ga.getSecond() + " seconds to clear five questions!");
+		
+	} // main
+}

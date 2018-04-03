@@ -1,0 +1,15 @@
+package ex1_arraylist;
+
+public class RemovePerson {
+	
+	
+	System.out.println("---정보삭제---");
+	System.out.print("전화번호 : ");
+	String phone = sc.next();
+	
+	for(  ) {
+		
+		
+		
+	}//for
+}

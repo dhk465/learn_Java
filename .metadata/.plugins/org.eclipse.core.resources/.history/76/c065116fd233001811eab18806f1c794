@@ -1,0 +1,52 @@
+package work;
+
+public class GuessAdds implements Runnable {
+	/*	
+		1-100사이의 난수 두개를 더하는 문제가 출제
+		
+			65 + 15
+		
+		키보드에서 답을 입력받고
+		
+			문제 1) 65 + 15 = 80|
+		
+		5문제가 정답 처리되면 프로그램 종료
+		
+			문제 5) 12 + 3 = 15
+			정답!
+			종료...
+		
+		다섯문제 모두 정답까지 몇초가 경과했는지를 출력
+		
+			총 32 초 경과
+		
+		sleep으로 시간을 기록
+		
+		데몬스레드를 사용하지 않고 프로그램을 종료한다.
+	 */
+	private int random1, random2;
+	private int second = 0;
+	private int count = 0;
+	
+	public void resetGame() {
+		
+	}
+	
+	@Override
+	public void run() {
+		
+		while (count <= 5) {
+			try {
+				
+				Thread.sleep(1000);
+				second++;
+				
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			} // try-catch
+			
+		} // while
+		
+	} // run()
+	
+}

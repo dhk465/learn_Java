@@ -1,0 +1,18 @@
+package ex4_arraylist;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BookShop {
+	public static void main(String[] args) {
+		
+		List<Book> list = new ArrayList<>();
+		
+		Book b001 = new Book("È«±æµ¿Àü", 10000);
+		b001.setTitle("È«±æµ¿Àü");
+		b001.setPrice(10000);
+		
+		list.add(b001);
+		
+	}
+}

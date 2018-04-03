@@ -1,0 +1,9 @@
+package ex1_set;
+
+public class Ex1_set {
+	public static void main(String[] args) {
+		// java.util패키지
+		// 특정 코드에서 중복된 값의 허용이 있어서는 안될때 사용
+		
+	}
+}
