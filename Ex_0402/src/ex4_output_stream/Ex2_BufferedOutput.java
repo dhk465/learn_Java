@@ -21,7 +21,10 @@ public class Ex2_BufferedOutput {
 			
 			String str2 = "두번째 라인입니다.";
 			
+			String str3 = "\r\n";
+			
 			bos.write(str.getBytes());
+			bos.write(str3.getBytes());
 			bos.write(str2.getBytes());
 			
 	//		bos.flush(); // close()가 호출되지 않아도 물리적 값을 기록한다.
