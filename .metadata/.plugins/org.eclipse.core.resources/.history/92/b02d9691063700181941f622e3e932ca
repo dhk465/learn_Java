@@ -1,0 +1,21 @@
+package ex4_output_stream;
+
+import java.io.FileOutputStream;
+
+import ex2_io.FilePath;
+
+public class Ex1_FileOutput {
+	public static void main(String[] args) {
+		
+		FileOutputStream fos = null;
+		
+		try {
+			fos = new FileOutputStream(FilePath.PATH + "/fileoutput.txt");
+		} catch (Exception e) {
+			
+		} finally {
+			
+		}
+		
+	}
+}

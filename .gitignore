@@ -5,8 +5,9 @@
 *.log
 
 # Plugin file
-.plugin/
-.recommenders/
+.plugin/*
+.recommenders/*
+RemoteSystemsTempFiles/*
 
 # BlueJ files
 *.ctxt
