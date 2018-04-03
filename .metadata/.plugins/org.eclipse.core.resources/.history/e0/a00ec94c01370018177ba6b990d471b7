@@ -1,0 +1,16 @@
+package ex3_input_stream;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+
+public class Ex4_BufferedInput {
+	public static void main(String[] args) {
+		
+		FileInputStream fis = null;
+		
+		BufferedInputStream bis = null;
+		
+		
+		
+	} // main
+}

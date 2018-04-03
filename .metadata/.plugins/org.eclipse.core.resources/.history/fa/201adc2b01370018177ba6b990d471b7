@@ -1,0 +1,7 @@
+package ex3_input_stream;
+
+public class Ex4_BufferedInput {
+	public static void main(String[] args) {
+		
+	}
+}

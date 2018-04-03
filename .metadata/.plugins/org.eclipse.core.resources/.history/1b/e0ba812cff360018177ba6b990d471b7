@@ -1,0 +1,17 @@
+package ex_work;
+
+import java.util.ArrayList;
+
+public class TGMain {
+	public static void main(String[] args) {
+		
+		ArrayList<String> arr = new ArrayList<>();
+		String[] data = {"apple", "banana", "orange"};
+		
+		TypeGame tg = new TypeGame(arr, data);
+		
+		tg.start();
+
+		
+	}
+}

@@ -1,0 +1,47 @@
+package ex_work;
+
+import java.util.ArrayList;
+
+public class TypeGame implements Runnable {
+
+	private ArrayList<String> arr;
+	private String[] data;
+	
+	private boolean isPlaying = true; // 쓰레드 제어
+	
+	public TypeGame(ArrayList<String> arr, String[] data) {
+		this.arr = arr;
+		this.data = data;
+	}
+	
+	public void setPlaying(boolean isPlaying) {
+		this.isPlaying = isPlaying;
+	}
+	
+	public void run() {
+		
+	}
+	
+	/*
+	준비해놓은 문자열 배열의 값이 3초 간격으로 arrayList에 추가
+	
+	String[] data = { "apple", "orange", "grape" };
+	
+	------------------------
+	[orange]
+	>> orange
+	[apple]
+	>> apple
+	[grape, apple]
+	>> apple
+	[grape]
+	>> grape
+	[orange]
+	>> orange
+	클리어!!!
+	
+	 */
+	
+	
+	
+}

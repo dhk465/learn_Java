@@ -1,0 +1,35 @@
+package ex_work;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class TGMain {
+	public static void main(String[] args) {
+		
+		ArrayList<String> arr = new ArrayList<>();
+		String[] data = {"apple", "banana", "orange"};
+		
+		TypeGame tg = new TypeGame(arr, data);
+		
+		tg.start();
+
+		if (arr.size() == 0) {
+			System.out.println("CLEAR!");
+			tg.setPlaying(false); // 쓰레드 정지
+		}
+		
+		System.out.println();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		String userInput = sc.next();
+		
+		// 사용자가 입력한 단어와 일치하는 값을 arr에서 검색
+		for (int i = 0; i < arr.size(); i++) {
+			if (userInput.equals(arr.get(i))) {
+				
+			}
+		}
+		
+	}
+}

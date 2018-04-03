@@ -1,0 +1,25 @@
+package ex3_input_stream;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+
+import ex2_io.FilePath;
+
+public class Ex4_BufferedInput {
+	public static void main(String[] args) {
+		
+		FileInputStream fis = null;
+		BufferedInputStream bis = null;
+		
+		byte[] result = new byte[100];
+		
+		try {
+			
+			String path = FilePath.PATH;
+			
+		} catch (Exception e) {
+			
+		}
+		
+	} // main
+}
