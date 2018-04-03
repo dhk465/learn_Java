@@ -4,6 +4,10 @@
 # Log file
 *.log
 
+# Plugin file
+.plugin/
+.recommenders/
+
 # BlueJ files
 *.ctxt
 
