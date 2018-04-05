@@ -1,5 +1,0 @@
-package ex6_thread;
-
-public class Thread1 extends Thread{
-	
-}

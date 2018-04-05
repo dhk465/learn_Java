@@ -1,9 +1,0 @@
-package ex1_thread_sleep;
-
-public class ThreadMain {
-	public static void main(String[] args) {
-		
-		
-		
-	}
-}

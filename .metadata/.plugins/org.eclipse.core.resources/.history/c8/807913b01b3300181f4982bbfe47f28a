@@ -1,7 +1,0 @@
-package ex4_thread;
-
-public class ThreadMain {
-	public static void main(String[] args) {
-		
-	}
-}

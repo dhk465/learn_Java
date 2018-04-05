@@ -1,9 +1,0 @@
-package ex6_thread;
-
-public class ThreadMain {
-	public static void main(String[] args) {
-		
-		Thread 
-		
-	}
-}
