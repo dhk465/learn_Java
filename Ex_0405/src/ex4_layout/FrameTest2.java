@@ -15,7 +15,9 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.TextEvent;
 import java.awt.event.TextListener;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileReader;
 import java.io.FileWriter;
 
 import javax.swing.JOptionPane;
@@ -134,11 +136,36 @@ public class FrameTest2 {
 		});
 		
 		// 불러오기 버튼
-		b_save.addActionListener(new ActionListener() {
+		b_load.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				try {
-// 해보자!			FileDialog fd = new FileDialog(f, "불러오기", FileDialog.LOAD);
+					String msg = null;
+					FileDialog fd = new FileDialog(f, "불러오기", FileDialog.LOAD);
+					fd.setVisible(true);
+					
+					String path = fd.getDirectory() + fd.getFile();
+					
+					FileReader fr = new FileReader(path);
+					BufferedReader br = new BufferedReader(fr);
+					
+					while ((msg = br.readLine()) != null) {
+						ta.append(msg + "\n");
+					}
+					
+					JOptionPane.showMessageDialog(f, "불러오기 성공!");
+					
+					
+					
+					if (br != null) {
+						br.close();
+					}
+					
+					if (fr != null) {
+						fr.close();
+					}
+					
+					path = null;
 					
 				} catch (Exception e) {
 					e.printStackTrace();
